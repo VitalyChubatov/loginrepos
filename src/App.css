@@ -1,38 +1,79 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+   background-color: #9E896A;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 30px;
+}
+.welcome:hover {
+ color: #F8EDDD;
 }
 
-.App-link {
-  color: #61dafb;
+
+.App a {
+  text-decoration: none;
+  color: black;
+  background-color: #9E896A;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+}
+.cat {
+  display: flex;
+  width: 500px;
+  height:600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  background-image: url(../public//Cat.png);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cat::before {
+  content: 'Lorem inpus';
+  font-size: 30px;
+  color: #F8EDDD;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+.cat::after {
+  content: 'Lorem inpus';
+  font-size: 20px;
+  color: #F8EDDD;
+  display: block;
+  flex-direction: column; 
+   align-self: flex-end;
+   position: relative;
+   right: 150px;
+   bottom: 20px;
+ 
+}
+
+.wrapper-app {
+  width: 100%;
+  display: flex;
+  justify-content: space-around ;
+  padding: 20px;
+}
+
+@media (width < 780px) {
+  .cat {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper-app {
+    padding: 0;
   }
 }
+
+
+

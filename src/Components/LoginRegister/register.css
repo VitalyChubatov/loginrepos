@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+   background-color: #9E896A;
+}
+
+.App {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.welcome:hover {
+ color: #F8EDDD;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.row{
+  margin-bottom: 30px;
+background: #F8EDDD;
+  width: 400px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30px;
+}
+.activeColor{
+    padding-top:5px;
+    height: 30px;
+    width: 140px;
+     background: #9E896A;
+    border: 2px solid grey;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.pointer{
+    background: #F8EDDD;
+    padding-top:5px;
+    height: 30px;
+     border-radius: 30px;
+    width: 140px;
+    cursor: pointer;
+}
+
+input {
+  background-color: #bdbab6;
+  border: 1px solid silver;
+  width: 400px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+button {
+  border: 1px solid silver;
+  color: aliceblue;
+  background-color: rgb(208, 138, 52);
+  padding: 10px;
+  border-radius: 30px;
+  width: 140px;
+  margin-top: 30px;
+  align-self: flex-end;
+  width: 200px;
+}
+
+@media (width < 720px) {
+    input {
+        width: 80%;
+    }
+    .row {
+        width: 100%;
+        padding: 5px;
+    }
+}
